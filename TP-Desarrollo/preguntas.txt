@@ -1,0 +1,91 @@
+25- ¿Qué diferencias puede encontrar entre una conexión Coaxial, UTP o Fibra?
+
+CUADRO 
+
+26- Según Cisco, ¿qué significa CCENT, CCNA y CCNP? Descripción breve del Track
+Routing & Switching y de algún otro a elección (ej. Wireless, Security, Cloud, etc).
+
+Según Cisco, CCENT (Cisco Certified Entry Networking Technician), CCNA (Cisco Certified Network Associate) y CCNP (Cisco Certified Network Professional) son certificaciones que validan las habilidades y el conocimiento en redes. Forman parte de una ruta de aprendizaje (o track) progresiva que permite avanzar en la carrera profesional.
+
+CCENT (Cisco Certified Entry Networking Technician):
+Era el primer paso en la ruta de certificaciones de Cisco. Certificaba el conocimiento básico sobre la instalación, operación y resolución de problemas en una red de sucursal de una empresa, incluyendo la seguridad de la red. Esta certificación fue retirada por Cisco en el año 2020.
+
+CCNA (Cisco Certified Network Associate):
+Certificación básica ampliamente reconocida que valida la capacidad de una persona para instalar, configurar, operar y solucionar problemas en redes enrutadas y conmutadas de tamaño mediano. Al obtener la certificación CCNA, los profesionales demuestran su experiencia en los fundamentos de redes, seguridad y automatización.
+
+CCNP (Cisco Certified Network Professional):
+Certificación de nivel avanzado que valida la capacidad de un profesional para planificar, implementar y resolver problemas de soluciones de red complejas. Se basa en los conocimientos básicos adquiridos con la certificación CCNA, demostrando experiencia en áreas como enrutamiento, conmutación, seguridad y administración de redes.
+Para obtenerla se deben aprobar dos exámenes, uno básico de tecnología y otro de concentración y especialización que se elige de entre una serie de dominios, los que se pueden elegir (CCNP Enterprise, Colaboración CCNP, Centro de datos CCNP, Seguridad CCNP, Proveedor de servicios CCNP).
+
+El Track Routing & Switching de Cisco es un programa de certificación que valida habilidades para diseñar, implementar, operar y solucionar problemas en redes enrutadas y conmutadas, es decir, aquellas que permiten la comunicación entre diferentes redes y la conexión de dispositivos en una misma red local, respectivamente. Este track histórico es fundamental para la carrera de especialistas en redes. En la actualidad, estos conocimientos han sido consolidados en el CCNP Enterprise y abarca una gama más amplia de temas; incluyendo redes inalámbricas, automatización y virtualización, lo que lo hace más relevante para las redes modernas.
+
+El Track de Cisco Security se enfoca en proteger las redes, sistemas y datos. Los profesionales de esta área se especializan en la implementación de soluciones de seguridad como firewalls, VPNs y sistemas de prevención de intrusiones. Es importante destacar que no es un producto o servicio específico, sino que hace alusión a soluciones y capacidades de seguridad que ofrece Cisco para proteger redes, nubes, terminales y correos electrónicos contra ciberamenazas.
+
+CUADRO
+
+27- Explique el modelo OSI. 
+
+El modelo OSI (Open Systems Interconnection) es un marco de referencia conceptual creado por la Organización Internacional de Normalización (ISO). Su objetivo principal es estandarizar cómo se comunican los sistemas informáticos entre sí, sin importar el hardware o software que usen.
+El modelo divide el proceso de comunicación en siete capas distintas, cada una con una función específica:
+Capa 7 (Aplicación): Es la capa con la que se interactúa directamente.
+Capa 6 (Presentación): Traduce el formato de los datos.
+Capa 5 (Sesión): Establece, gestiona y termina la conexión entre las aplicaciones. 
+Capa 4 (Transporte): Se encarga de la entrega de los datos. 
+Capa 3 (Red): Maneja el direccionamiento y el enrutamiento. 
+Capa 2 (Enlace de Datos): Gestiona la transferencia de datos entre dos dispositivos conectados directamente. 
+Capa 1 (Física): Se encarga de la transmisión de datos sin procesar a través de un medio físico (cables, ondas, etc.).
+Cada capa se comunica solo con la capa directamente superior e inferior, lo que permite que el sistema sea modular y flexible.
+
+28- Explicar el estándar IEEE 802.3 regula la red. Cómo se implementa, ventajas y
+desventajas.
+
+El estandar IEEE 802.3 es el conjunto de estándares desarrollados por el Instituto de Ingenieros Eléctricos y Electrónicos (IEEE) que define la tecnología Ethernet para redes de área local (LAN) y metropolitana (MAN). Estos estándares especifican cómo se implementan la capa física y la capa de control de acceso al medio (MAC) en las redes cableadas. Cubren aspectos como la velocidad de transmisión, los medios físicos (cobre o fibra), el método de acceso a la red como el CSMA/CD, y el formato de la trama Ethernet. 
+Es el estándar más común para la comunicación de redes locales (LAN) y es fundamental en el mundo de las redes informáticas.
+Su implementación se realiza a través de la tecnología Ethernet, que funciona en las capas 1 (Física) y 2 (Enlace de Datos) del modelo OSI y requiere tanto hardware físico como protocolos de software.
+El hardware se encarga de la infraestructura física por donde viajan los datos.
+Medios de Transmisión: Se usan cables de red, siendo el UTP el más común, aunque también se usa fibra óptica para mayores distancias. El estándar especifica la forma y el tamaño de los conectores y cables.
+Tarjetas de Interfaz de Red (NIC): Cada dispositivo (computadora, servidor) necesita una NIC. Este es el hardware que se conecta al cable y que es capaz de procesar las señales eléctricas o de luz para transmitir y recibir datos.
+Dispositivos de Conmutación: Switches, que conectan múltiples dispositivos y dirigen el tráfico de datos de manera eficiente.
+El protocolo define cómo los dispositivos organizan y gestionan el flujo de datos.
+Trama de Ethernet: Los datos que vienen de la capa de red (como los paquetes IP) se empaquetan en una "trama" de Ethernet. Esta trama tiene un formato específico que incluye la dirección MAC de origen y destino para identificar los dispositivos.
+CSMA/CD: Este protocolo es la regla de control de acceso al medio. Antes de transmitir, un dispositivo "escucha" el medio para ver si está libre. Si detecta una colisión (dos dispositivos transmitiendo al mismo tiempo), detiene la transmisión, espera un tiempo aleatorio y lo intenta de nuevo.
+
+CUADRO 
+
+29- Explicar el estándar IEEE 802.4 regula la red.
+
+IEEE 802.4, también conocido como el estándar Token Bus, es un protocolo de red definido por el Instituto de Ingenieros Eléctricos y Electrónicos (IEEE).
+Este estándar fue desarrollado para proporcionar un medio confiable de comunicación en redes de área local (LAN) que operan en entornos industriales y de automatización.
+Este estándar se centra en la transmisión de datos de manera determinista y predecible, lo que lo hace especialmente adecuado para aplicaciones que requieren tiempos de respuesta consistentes y controlados.
+El estándar IEEE 802.4 funciona usando un método de acceso al medio llamado token passing, en una topología de bus lógico, aunque la topología física sea un bus.
+
+Testigo (token): Hay un mensaje especial, el "testigo", que circula por la red en un orden predefinido.
+
+Transmisión de datos: Solo el nodo (computadora, dispositivo) que tiene el testigo puede transmitir datos. Si un nodo quiere enviar información, espera hasta recibir el testigo.
+Liberación del testigo: Una vez que el nodo ha terminado de transmitir sus datos, libera el testigo, que pasa al siguiente nodo en la secuencia preestablecida.
+
+Control: Si un nodo recibe el testigo pero no tiene datos para enviar, simplemente lo pasa al siguiente en la secuencia, asegurando que todos los nodos tengan una oportunidad de acceso.
+Este método garantiza que ningún nodo sea excluido de la red y ofrece un rendimiento predecible, lo cual fue útil para redes industriales que necesitaban un control estricto del tiempo de transmisión.
+
+30- ¿Qué protocolos se usan para enviar y recibir correo?
+
+Los protocolos de correo electrónico son un conjunto de reglas que rigen cómo se envían, reciben y almacenan los correos electrónicos. Los principales protocolos son SMTP para enviar correos, y POP3 e IMAP para recibir correos: SMTP maneja la transmisión de correo entre servidores, mientras que POP3 descarga los correos electrónicos a un dispositivo e IMAP sincroniza los correos electrónicos en múltiples dispositivos.
+
+IMAGENES 
+
+31- ¿Qué protocolo puede usarse para leer correo recibido?
+POP3 e IMAP manejan los correos entrantes y funcionan de diferentes maneras para recuperar o acceder a los mensajes de email. Por lo tanto, se consideran protocolos de acceso al correo.
+Mientras que el protocolo POP3 asume que se accede a tu email solo desde una aplicación, IMAP permite el acceso simultáneo por varios clientes. 
+
+IMAP es más adecuado si se accede al email desde diferentes ubicaciones o si los mensajes son administrados por múltiples usuarios.
+
+POP3, en cambio, descarga los correos a la computadora local, eliminándolos del servidor. Por lo tanto, reduce el espacio que usa la cuenta de correo electrónico en el servidor web.
+
+32- Diferencias entre IPV4 e IPV6
+
+CUADRO
+
+33- (Individual para cada integrante del grupo) ¿Qué experiencia tienen en redes?
+Ejemplos: Accedo y configuro el router de mi casa como admin, en mi trabajo hago tareas relacionadas a networking, configuro una PAN hogareña para mi o mi familia, amigos/as etc (Personal Area Network, todo dispositivo Wireless o no), no tengo ninguna experiencia, etc.
+
+No tengo ninguna experiencia en redes.
