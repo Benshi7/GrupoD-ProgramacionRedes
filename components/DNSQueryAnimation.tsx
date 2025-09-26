@@ -131,6 +131,7 @@ export function DNSQueryAnimation ({
           <AnimatePresence>
             {showQuery && currentAnimation.query && (
               <motion.div
+                key='query'
                 initial={{ x: -100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 exit={{ x: 100, opacity: 0 }}
@@ -146,6 +147,7 @@ export function DNSQueryAnimation ({
 
             {showResponse && currentAnimation.response && (
               <motion.div
+                key='response'
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 exit={{ x: -100, opacity: 0 }}
@@ -175,6 +177,7 @@ export function DNSQueryAnimation ({
       <AnimatePresence>
         {(showQuery || showResponse) && (
           <motion.div
+            key={showQuery ? 'query-message' : 'response-message'}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
