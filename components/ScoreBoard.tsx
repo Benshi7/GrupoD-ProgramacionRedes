@@ -3,13 +3,19 @@
 import { Card, CardContent } from '@/components/ui/card'
 import { Trophy, Target, Clock } from 'lucide-react'
 import { useQuizStore } from '@/store/useQuizStore'
+import { useEffect, useState } from 'react'
 
 export function ScoreBoard () {
   const { getTotalScore, getTotalProgress, getTotalTimeSpent } = useQuizStore()
+  const [isClient, setIsClient] = useState(false)
 
-  const totalScore = getTotalScore()
-  const totalProgress = getTotalProgress()
-  const timeSpent = getTotalTimeSpent()
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
+  const totalScore = isClient ? getTotalScore() : 0
+  const totalProgress = isClient ? getTotalProgress() : 0
+  const timeSpent = isClient ? getTotalTimeSpent() : 0
 
   return (
     <Card className='bg-card/50 border-border'>
