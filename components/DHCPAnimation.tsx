@@ -201,4 +201,5 @@ export function DHCPAnimation({ isActive, onComplete }: DHCPAnimationProps) {
       )}
     </div>
   )
+  
 }

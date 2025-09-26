@@ -12,6 +12,7 @@ import { modules } from "@/lib/modules"
 import { useQuizStore } from "@/store/useQuizStore"
 
 export default function QuizPage() {
+  console.log("QuizPage: componente inicializado")
   const params = useParams()
   const router = useRouter()
   const moduleId = params.module as string
@@ -28,7 +29,11 @@ export default function QuizPage() {
 
   useEffect(() => {
     if (!module || questions.length === 0) {
+      console.log(`QuizPage: preguntas no encontradas para ID: ${moduleId}.`) 
       router.push("/")
+    }
+    else {
+      console.log(`QuizPage: Módulo cargado: ${module.title}.`)
     }
   }, [module, questions, router])
 

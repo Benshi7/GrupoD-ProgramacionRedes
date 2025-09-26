@@ -198,4 +198,5 @@ export function DHCPLeasePanel({ isActive, onLeaseExpire }: DHCPLeasePanelProps)
       </Card>
     </div>
   )
+  
 }

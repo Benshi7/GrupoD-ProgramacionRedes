@@ -119,4 +119,5 @@ export function QuizCard({ question, selectedAnswer, onAnswerSelect }: QuizCardP
       <ExplanationDialog question={question} isOpen={showExplanation} onClose={() => setShowExplanation(false)} />
     </>
   )
+  
 }

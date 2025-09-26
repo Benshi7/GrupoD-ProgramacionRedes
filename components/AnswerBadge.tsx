@@ -33,4 +33,5 @@ export function AnswerBadge({ isCorrect }: AnswerBadgeProps) {
       </Badge>
     </motion.div>
   )
+  
 }

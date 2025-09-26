@@ -5,6 +5,7 @@ import { ThemeToggle } from "@/components/ThemeToggle"
 import { modules } from "@/lib/modules"
 
 export default function HomePage() {
+  console.log("El componente HomePage se está renderizando...")
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
