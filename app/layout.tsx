@@ -12,7 +12,13 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'Grupo D - IFTS 18 - Aprende Redes de Forma Interactiva',
   description:
-    'Plataforma educativa interactiva para aprender protocolos de red: DNS, DHCP, ARP, STP y Subnetting'
+    'Plataforma educativa interactiva para aprender protocolos de red: DNS, DHCP, ARP, STP y Subnetting',
+  icons: {
+    icon: {
+      url: '/ifts18.svg',
+      type: 'image/svg+xml'
+    }
+  }
 }
 
 export default function RootLayout ({
